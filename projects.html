@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+		<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- FontAwesome for Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="css/style.css" rel="stylesheet">
+  </head>
+  <body> 
+	<!-- Barra Menu -->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		
+		<ul class="nav navbar-nav">
+		  <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i> Menu
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Projects</a></li>
+			  <li><a href="#">Clients</a></li>
+			  <li><a href="http://www.google.com">+ Info</a></li>
+			</ul>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+  <div class="container">
+		<table class="table" id="tableProjects">
+			<thead class="thead-dark">
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">Name</th>
+			  <th scope="col">Description</th>
+			  <th scope="col">People</th>
+			  <th scope="col">Creation Date</th>
+			  <th scope="col">Last Update</th>
+			  <th scope="col">Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Project Java 1</td>
+			  <td>Industry</td>
+			  <td>Juan Perez, Mario Pereyra</td>
+			  <td>08/30/2018</td>
+			  <td>08/30/2018</td>
+			  <td>
+			  <button type="button" class="btn btn-secondary">Update</button>
+			  <button type="button" class="btn btn-secondary">Delete</button>
+			  </td>
+			</tr>
+			</tbody>
+		</table>
+		<a href="#" class="btn btn-primary" id="addProject">+ Project</a>
+		<script type="text/template" id="nuevaFilaProject">
+		<tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+		</tr>
+		</script>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/dinamic-project.js"></script>
+</html>
