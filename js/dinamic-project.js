@@ -19,3 +19,7 @@ $(document).ready(function(){
         $("#panel").slideDown("slow");
     });
 });
+
+var listProjects = [{"name": "Pepito project", "description": "Java Project", "people": "Pepito", "creationDate": "01-08-2018", "lastUpdate": "09-09-2018"}];
+
+$("#resultado").text(a.join(", "));
