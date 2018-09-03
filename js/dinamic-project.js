@@ -10,8 +10,8 @@ var addProject = function(event){
 var agregarProjectBtn = document.querySelector('#addProject');
 agregarProjectBtn.addEventListener('click', addProject);
 
-$(document ).click(function() {
-  $( "#toggle" ).toggle( "slide" );
+$(document).click(function() {
+  $("#toggle").toggle("slide");
 });
 
 $(document).ready(function(){
