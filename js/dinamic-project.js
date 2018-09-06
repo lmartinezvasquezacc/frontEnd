@@ -18,8 +18,27 @@ function makeTable (jsonObj){
 	var tableParts = jsonObj;
 
 	for (var i = 0; i<tableParts.length; i++){
-		document.createElement('tr');
-		document.createElement('td');
+		var tr = document.createElement('tr');
+		var td1 = document.createElement('td');
+		var td2 = document.createElement('td');
+		var td3 = document.createElement('td');
+		var td4 = document.createElement('td');
+		var td5 = document.createElement('td');
+		var td6 = document.createElement('td');
+		var td7 = document.createElement('td');
+		var td8 = document.createElement('td');
+		var td9 = document.createElement('td');
+
+		td1.textContent = tableParts[i].id;
+		td2.textContent = tableParts[i].name;
+		td3.textContent = tableParts[i].description;
+		td4.textContent = tableParts[i].assignedAmount;
+		td5.textContent = tableParts[i].clientId;
+		td6.textContent = tableParts[i].calendarStartDate;
+		td7.textContent = tableParts[i].calendarEndDate;
+		td8.textContent = tableParts[i].lastUpdate;
+		td9.textContent = tableParts[i].active;
+
 
 }
 
