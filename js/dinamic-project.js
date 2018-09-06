@@ -38,7 +38,13 @@ function makeTable (jsonObj){
 		td7.textContent = tableParts[i].calendarEndDate;
 		td8.textContent = tableParts[i].lastUpdate;
 		td9.textContent = tableParts[i].active;
+	}
 
+	tBody = document.createElement('tbody');
+
+	tbody.append(td1, td2, td3, td4, td5, td6, td7, td8, td9);
+
+	tableBody.append(tbody);
 
 }
 
@@ -70,17 +76,4 @@ $("#resultado").text(a.join(", "));
 
 function addNewProject() {
 	alert("Project added successfully")
-}
-
-function tableHead (jsonObj){
-	'use strict'
-	
-	for (var i = 0; i<listProjects.length; i++){
-		var tr = `<tr>
-          <td>`+data.datos[i].nombre+`</td>
-          <td>`+data.datos[i].apellido+`</td>
-          <td>`+data.datos[i].cargo+`</td>
-          <td>`+data.datos[i].empresa+`</td>
-        </tr>`;
-	}
 }
