@@ -1,4 +1,4 @@
-var tableHead = document.querySelector("#tableHead");
+// var tableHead = document.querySelector("#tableHead");
 var tableBody = document.querySelector("#tableBody");
 
 var requestURL = 'http://localhost:1001/projects';
@@ -11,7 +11,8 @@ request.send();
 request.onload = function() {
 	'use strict';
 	var projectData = request.response;
-};
+	makeTable(projectData);
+}
 
 function makeTable (jsonObj){
 	'use strict'
@@ -70,10 +71,4 @@ $(document).ready(function(){
     });
 });
 
-var listProjects = [{"name": "Pepito project", "description": "Java Project", "people": "Pepito", "creationDate": "01-08-2018", "lastUpdate": "09-09-2018"}];
-
 $("#resultado").text(a.join(", "));
-
-function addNewProject() {
-	alert("Project added successfully")
-}

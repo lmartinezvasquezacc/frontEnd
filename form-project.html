@@ -11,27 +11,35 @@
 <h1>Add a new project</h1>
 <form>
   <div class="form-group">
-    <label for="formGroupExampleInput">Name</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+    <label for="name">Project name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter new project name">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">Description</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Description">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" placeholder="Enter project description">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">People</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="People's names">
+    <label for="assignedAmount">Project Employees</label>
+    <input type="text" class="form-control" id="assignedAmount" placeholder="Enter amount of slaves">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Creation date</label>
-    <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Date">
+    <label for="clientId">Client ID</label>
+    <input type="text" class="form-control" id="clientId" placeholder="Enter client ID">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Last Update</label>
-    <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Date last update">
+    <label for="calendarStartDate">Start date</label>
+    <input type="date" class="form-control" id="calendarStartDate" placeholder="Date last update">
   </div>
-  <input type="submit" value="Save" onclick=addNewProject()/>
+  <div class="form-group">
+    <label for="calendarEndDate">End date</label>
+    <input type="date" class="form-control" id="calendarEndDate" placeholder="Date last update">
+  </div>
+    
+  <input type="submit" value="Save"/>
+
 </form>
 </div>
+
+<script type="text/javascript" src="js/dinamic-formproject.js"></script>
 </body>
 </html>
