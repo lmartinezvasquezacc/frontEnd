@@ -14,6 +14,12 @@ request.onload = function() {
 };
 
 function makeTable (jsonObj){
+	'use strict'
+	var tableParts = jsonObj;
+
+	for (var i = 0; i<tableParts.length; i++){
+		document.createElement('tr');
+		document.createElement('td');
 
 }
 
@@ -47,8 +53,9 @@ function addNewProject() {
 	alert("Project added successfully")
 }
 
-$(function) {
-	$(#tableBody).html("");
+function tableHead (jsonObj){
+	'use strict'
+	
 	for (var i = 0; i<listProjects.length; i++){
 		var tr = `<tr>
           <td>`+data.datos[i].nombre+`</td>
