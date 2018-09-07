@@ -17,10 +17,10 @@ function postForm(){
 
     post.onload = function () {
         if (post.readyState === 4 && post.status === 400){
-            window.location.replace
-            (http://localhost:1001/web/dinamic-project)
+            window.location.replace ('http://localhost:1001/web/projects.html');
         }
+    };
 
-    }
+    post.send(dataJson);
 
 }
